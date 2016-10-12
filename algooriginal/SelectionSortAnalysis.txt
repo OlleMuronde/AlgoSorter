@@ -1,0 +1,6 @@
+The idea of selection sort is rather simple: we repeatedly find the next largest (or smallest) element in the array and move it to its final position in the sorted array. 
+Assume that we wish to sort the array in increasing order, i.e. the smallest element at the beginning of the array and the largest element at the end. 
+We begin by selecting the largest element and moving it to the highest index position. 
+We can do this by swapping the element at the highest index and the largest element. 
+We then reduce the effective size of the array by one element and repeat the process on the smaller (sub)array. 
+The process stops when the effective size of the array becomes 1 (an array of 1 element is already sorted).

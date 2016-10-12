@@ -1,0 +1,9 @@
+Merge Sort is a sorting algorithm based on a divide and conquer algorithmic design pattern. 
+The best way to illustrate the mechanics merge sort is to divide the algorithms steps into the subsections. 
+The first section is the divide section where the algorithm receives the array input and makes one of the following two choices. 
+If the array size is 0 or 1 we return the element as it is already sorted, if not we divide the input array into half (n/2). 
+We then apply our second step which is to recursively reduce our problem into smaller and smaller sub problems 
+until we can solve each sub problem in this case repeatedly split the array into smaller and smaller sub arrays
+until we can sort each subarray.  
+Our final step is to merge/conquer step where we merge each of the sorted sub arrays together into a bigger array 
+which contains all of the elements in sorted order. 

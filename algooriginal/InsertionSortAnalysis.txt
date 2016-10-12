@@ -1,0 +1,11 @@
+Preamble
+Insertion Sort assumes all of the elements are sorted with respect to each other and gradually
+adds elements to the "sorted pile" placing them in order with respect to sorted pile.
+Step 1:
+Remember elements are not always put into their final position but rather their sorted position relative to the pile.
+So on the first step we assume that the initial element is sorted(as there is only one element) and we compare it to the next element and put that element in its position with
+respect to the first element.
+Step 2:
+On the second iteration we do the same except we compare the element with respect to the previous two elements(pile)
+and we place it in its correct place with respect to that pile.
+We continue this process until we reach the end of the array by which time the array is its sorted order.

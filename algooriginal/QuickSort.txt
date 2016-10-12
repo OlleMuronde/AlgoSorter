@@ -1,0 +1,31 @@
+Quick Sort Pseudocode  
+Algorithm quickSort 
+Inputs A: Array of Integers; L,R:Integer; 
+Variables p: Integer; 
+Begin 
+
+if (R > L) then 
+p := partition(A,L,R); 
+quickSort(A,L,p-1); 
+quickSort(A,p+1,R); 
+fi 
+End 
+ 
+ 
+Quick Sort Pseudocode (Parition)  
+ 
+Algorithm partition 
+Inputs A: Array of Integers; left,right:Integer; 
+Returns pL: Integer; 
+Variables pL,pR,v: Integer; 
+Begin 
+v := A[right] 
+pL := left; pR := right; 
+while (pL < pR) do 
+
+while (A[pL] < v) do pL:=pL+1 od 
+while (A[pR]>=v and pR>left) do pR:=pR-1 od 
+if (pL < pR) then swap(A,pL,pR) fi 
+od 
+swap(A,pL,right); 
+return pL; 

@@ -1,0 +1,19 @@
+Pseudocode
+
+Algorithm SelectionSort
+Inputs A: Array of Integers;
+N:Integer;
+Variables i,j,min: Integer;
+
+Begin
+for i:=0 to N-2 do
+
+min:=i;
+for j:=i+1 to N-1 do
+if (A[j]<A[min]) then min:=j fi
+od
+swap(A,i,min);
+od
+
+End
+

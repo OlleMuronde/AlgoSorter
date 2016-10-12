@@ -1,0 +1,15 @@
+Merge Sort Pseudo code 
+Algorithm Merge Sort 
+Inputs A: Array of Integers; N: Integer; 
+Variables p, r, q: Integer; 
+Begin 
+ mergesort(A,p,r) 
+if(p<r) then 
+q:=(p+r)1/2 
+ 
+mergesort(A,p,q) 
+mergesort(A,q+1,r) 
+mergesort(A,p,q,r) 
+od  
+End 
+ 

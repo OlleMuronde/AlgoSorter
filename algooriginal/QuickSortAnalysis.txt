@@ -1,0 +1,13 @@
+Quicksort Is another divide and conquer algorithm, the core idea of Quicksort, 
+is to select some value from the input array and 
+use that as a “pivot” to split the other values into two sub arrays:
+ those smaller and those larger than the pivot.
+ A selection procedure partitions the values so that the lower portion of the array holds values not exceeding that of the pivot,
+ while the upper part holds only larger values.  
+This selection can be performed in place by scanning in from the two ends of the array, exchanging values as necessary.
+ The pivot is then placed where it belongs, 
+so that the array contains a first region (still unsorted) with the low values, 
+then the pivot, then a third region (still unsorted) with the high values. 
+For an n element array it takes about n comparisons and data exchanges to partition the array. 
+Quick sort is then called recursively to deal with the low and high parts of the data, 
+and the result is that the entire array ends up perfectly sorted. 
